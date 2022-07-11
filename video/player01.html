@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一小时开发996.ICU</title>
+    <link rel="icon" href="../img/logo1.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/player.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<body>
+    <script src="../js/nav-bar2.js"></script>
+    <div id="app">
+    <div class="clearfix warp">
+        <div class="container">
+            <!-- 当前位置 -->
+            <div class="position">
+                <span>当前位置：</span>
+                <span><a href="#">首页</a></span>>
+                <span><a href="#">视频教程</a></span>>
+                <span><a href="javascript:;">一小时开发996.ICU</a></span>
+            </div>
+            <!-- 视频播放 -->
+            <div class="video-container">
+                <video v-for="data in dataList" :class="dataIndex == data.index?'show':'hide'" controls :src="data.url"></video>
+                
+            </div>
+            <!-- 介绍 -->
+            <div class="details">
+                <div class="title">
+                    <h1>标题</h1>
+                </div>
+                <div class="status">
+                    <span>评分9.4</span>
+                    <span>5节课</span>
+                    <span>312583人已学</span>
+                </div>
+                <div class="lesd">
+                    <h4>观看本章视频你能学到什么？</h4>
+                    <p>掌握vue项目搭建、github项目发布、域名及网站搭建流程。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="switch">
+            <ul class="switch-nav">
+                <!-- 章节介绍 -->
+                <li class="switch-list active">
+                    <a class="switch-link" href="javascript:;">章节介绍</a>
+                    <div class="f1">
+                        <div class="f2">
+                            <div class="advertising">
+                                <img src="../img/FpNIhZ1_AmVTXvimcm9SZTdMon5j.jpg" />
+                            </div>
+                            <ul class="nav-f2">
+                                <li>课程介绍：</li>
+                                <li>"996"工作制，即每天早上9点到岗，工作到晚上9点，每周工作6天。</li>
+                                <li>"996"工作制的周工作时间为最低60小时。</li>
+                                <li>什么是996.ICU?</li>
+                                <li>工作996，生病ICU。</li>
+                            </ul>
+                            <ul class="nav-f2">
+                                <li>课程介绍：</li>
+                                <li>第1节 一小时开发996.ICU</li>
+                                <li>第2节 一小时开发996.ICU</li>
+                                <li>第3节 一小时开发996.ICU</li>
+                                <li>第4节 一小时开发996.ICU</li>
+                                <li>第5节 一小时开发996.ICU</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- 课程目录 -->
+                <li class="switch-list">
+                    <a class="switch-link" href="javascript:;">课程目录</a>
+                    <div class="f1">
+                        <div class="f2">
+                            <ul class="course-nav">
+                                <li>
+                                    <span>第1章 - 一小时开发996.ICU</span>
+                                </li>
+                                <li v-for="data in sectionList" :class="sectionIndex == data.index?'bgcolor':'hand'" @click="myShowClick(data.index)">
+                                    <span>{{data.title}}</span>
+                                    <a href="javascript:;">{{data.play}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- 相关文章 -->
+                <li class="switch-list">
+                    <a class="switch-link" href="javascript:;">相关文章</a>
+                    <div class="f1">
+                        <div class="f2">
+                            <ul class="related">
+                                <!-- 文章01 -->
+                                <li class="related-list">
+                                    <a class="related-link" href="#" target="_blank" title="Kbone + Vue 项目手工搭建流程">
+                                        <img src="https://www.qingqingblog.com/d/file/p/2020/07-23/2aefe8eabd022b1646dad909cf3d9d7e.jpg" />
+                                        <div class="related-fl">
+                                            <h3>Kbone + Vue 项目手工搭建流程</h3>
+                                            <p class="p">Kbone + Vue 项目手工搭建流程</p>
+                                            <span class="span-text">2020-08-27</span>
+                                            <div class="right span-text">
+                                                <i class="iconfont icon-view"></i>
+                                                <span>109647</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- 文章02 -->
+                                <li class="related-list">
+                                    <a class="related-link" href="#" target="_blank" title="React + Kbone 实现 Todos App">
+                                        <img src="https://www.qingqingblog.com/d/file/p/2020/07-23/2aefe8eabd022b1646dad909cf3d9d7e.jpg" />
+                                        <div class="related-fl">
+                                            <h3>React + Kbone 实现 Todos App</h3>
+                                            <p class="p">React + Kbone 实现 Todos App</p>
+                                            <span class="span-text">2020-08-27</span>
+                                            <div class="right span-text">
+                                                <i class="iconfont icon-view"></i>
+                                                <span>110892</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- 文章03 -->
+                                <li class="related-list">
+                                    <a class="related-link" href="#" target="_blank" title="React + Kbone 实现 Todos App">
+                                        <img src="https://www.qingqingblog.com/d/file/p/2020/07-23/2aefe8eabd022b1646dad909cf3d9d7e.jpg" />
+                                        <div class="related-fl">
+                                            <h3>React + Kbone 实现 Todos App</h3>
+                                            <p class="p">React + Kbone 实现 Todos App</p>
+                                            <span class="span-text">2020-08-27</span>
+                                            <div class="right span-text">
+                                                <i class="iconfont icon-view"></i>
+                                                <span>84109</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- 文章04 -->
+                                <li class="related-list">
+                                    <a class="related-link" href="#" target="_blank" title="使用 kbone-cli 快速开发">
+                                        <img src="https://www.qingqingblog.com/d/file/p/2020/07-23/2aefe8eabd022b1646dad909cf3d9d7e.jpg" />
+                                        <div class="related-fl">
+                                            <h3>使用 kbone-cli 快速开发</h3>
+                                            <p class="p">使用 kbone-cli 快速开发</p>
+                                            <span class="span-text">2020-08-27</span>
+                                            <div class="right span-text">
+                                                <i class="iconfont icon-view"></i>
+                                                <span>110934</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- 文章05 -->
+                                <li class="related-list">
+                                    <a class="related-link" href="#" target="_blank" title="Kbone基础简介">
+                                        <img src="https://www.qingqingblog.com/d/file/p/2020/07-23/2aefe8eabd022b1646dad909cf3d9d7e.jpg" />
+                                        <div class="related-fl">
+                                            <h3>Kbone基础简介</h3>
+                                            <p class="p">Kbone基础简介</p>
+                                            <span class="span-text">2020-08-27</span>
+                                            <div class="right span-text">
+                                                <i class="iconfont icon-view"></i>
+                                                <span>146972</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- 文章06 -->
+                                <li class="related-list">
+                                    <a class="related-link" href="#" target="_blank" title="Electron使用指南之项目打包部署">
+                                        <img src="https://www.qingqingblog.com/d/file/p/2020/07-23/2aefe8eabd022b1646dad909cf3d9d7e.jpg" />
+                                        <div class="related-fl">
+                                            <h3>Electron使用指南之项目打包部署</h3>
+                                            <p class="p">Electron使用指南之项目打包部署</p>
+                                            <span class="span-text">2020-08-22</span>
+                                            <div class="right span-text">
+                                                <i class="iconfont icon-view"></i>
+                                                <span>99524</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fixed-right">
+            <a href="#" target="_blank">
+                <img src="../img/FjSyYwZpHYSUlia4Pw0H-TwvXzOA.jpg" />
+            </a>
+            <div class="group">
+                <h3>QQ技术交流群</h3>
+                <div class="avatar-qq">
+                    <img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/cont-right-qqico.png" />
+                    <p class="front-fan">HTML5/Web前端锋迷②群</p>
+                    <p class="number">816390107</p>
+                    <a href="#">加入群聊</a>
+                </div>
+            </div>
+            <div class="group">
+                <h3>大家都在看</h3>
+                <ul class="group-nav">
+                    <!-- 小程序云项目 -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="2020年毕设论文辅导-小程序云项目" href="#">2020年毕设论文辅导-小程序云项目</a>
+                            <p><span class="project">项目</span><span>161559人学习</span></p>
+                        </div>
+                    </li>
+                    <!-- Vue喵喵电影 -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="2020年毕设论文辅导-Vue喵喵电影" href="#">2020年毕设论文辅导-Vue喵喵电影</a>
+                            <p><span class="project">项目</span><span>163598人学习</span></p>
+                        </div>
+                    </li>
+                    <!-- React美食网 -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="2020年毕设论文辅导-React美食网" href="#">2020年毕设论文辅导-React美食网</a>
+                            <p><span class="project">项目</span><span>170659人学习</span></p>
+                        </div>
+                    </li>
+                    <!-- 职位管理系统 -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="2020年毕设论文辅导-职位管理系统" href="#">2020年毕设论文辅导-职位管理系统</a>
+                            <p><span class="project">项目</span><span>199213人学习</span></p>
+                        </div>
+                    </li>
+                    <!-- 资产管理平台 -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="2020年毕设论文辅导-资产管理平台" href="#">2020年毕设论文辅导-资产管理平台</a>
+                            <p><span class="project">项目</span><span>160037人学习</span></p>
+                        </div>
+                    </li>
+                    <!-- ReactNative项目之美食App -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="前端教程_ReactNative项目之美食App（2020首发）" href="#">前端教程_ReactNative项目之美食App（2020首发）</a>
+                            <p><span class="project">项目</span><span>171537人学习</span></p>
+                        </div>
+                    </li>
+                    <!-- HTML+CSS新手快速入门教程 -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="HTML+CSS新手快速入门教程（编程小白福音系列）" href="#">HTML+CSS新手快速入门教程（编程小白福音系列）</a>
+                            <p><span class="primary">初级</span><span>187720人学习</span></p>
+                        </div>
+                    </li>
+                    <!-- HTML+CSS新手快速入门教程 -->
+                    <li class="group-list">
+                        <img src="https://www.yangqq.net/d/file/blogs/2018-07-05/f8217f499e3900981a84dc700bd42b74.png" />
+                        <div>
+                            <a title="2020版uni-app项目实战教程（前沿技术）" href="#">2020版uni-app项目实战教程（前沿技术）</a>
+                            <p><span class="project">项目</span><span>184966人学习</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../js/footer2.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <!-- 自定义 -->
+    <script src="../js/player01.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".switch-list").click(function () {
+				$(this).addClass("active").siblings().removeClass("active");	// siblings()返回别选择元素的同级元素
+			});
+		});
+	</script>
+</body>
+</html>

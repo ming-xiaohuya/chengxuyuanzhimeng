@@ -1,0 +1,119 @@
+body{
+    background-color: #F6F6F6;
+}
+.container{
+    margin-top: 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+    overflow: hidden;
+}
+/* 当前位置 */
+.header{
+    background-color: #F6F6F6;
+    padding: 20px 15px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+.position{
+    margin-bottom: 15px;
+}
+.position span{
+    margin: 0 5px;
+}
+.header h1{
+    color: #262626;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+/* 状态 */
+.status span{
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #e8e8e8;
+}
+.status span:last-child{
+    border-right: 0px;
+}
+
+.content{
+    padding: 50px;
+}
+.centered{
+    width: 680px;
+    margin: 30px auto;
+}
+.centered img{
+    width: 100%;
+    border-radius: 4px;
+}
+/* 按钮 */
+.btn{
+    width: 350px;
+    margin: 30px auto;
+}
+.btn a{
+    display: inline-block;
+    width: 156px;
+    height: 38px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    background-color: #f64c59 ;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.btn a:last-child{
+    background-color: #393D49;
+}
+/* 详情 */
+.details{
+    padding: 20px;
+    color: #5E5E5E;
+    font-weight: 600;
+    background-color: #fafaf9;
+    border-left: 4px solid #dedede;
+    border-top: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+    box-shadow: 1px 3px #f9f9f9;
+}
+.des{
+    padding: 20px 0;
+}
+.affirm{
+    margin-top: 30px;
+}
+.affirm span{
+    color: red;
+}
+
+.level{
+    margin: 0 50px 50px 50px;
+    border-top: 1px solid #d8e4e6;
+}
+.level-left{
+    float: left;  
+}
+.box span{
+    float: left;
+    color: #cdcdcd;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 10px 30px;
+}
+.level-left a{
+    display: inline-block;
+    height: 18px;
+    color: #337ab7;
+    line-height: 18px;
+    padding-left: 30px;
+    background: url(https://www.php.cn/static/xiazai/images/prev.png) no-repeat;
+    background-position: left center;
+}
+.level-right{
+    float: right;
+}
+.level-right .box span{
+    margin-right: 0px;
+}

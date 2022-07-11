@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社区问答</title>
+    <link rel="icon" href="img/logo1.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/community.css">
+</head>
+<body>
+    <script src="js/nav-bar.js"></script>
+    <div class="container">
+        <div id="app" class="left">
+            <div class="group">
+                <div class="title">
+                    <p>热门小组</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="https://www.php.cn/upload/system/000/000/000/5a9111e703515423.jpg" />
+                        <div>
+                            <p>PHP讨论组</p>
+                            <p>3105位成员</p>
+                            <a href="#">+ 加入小组</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://www.php.cn/upload/system/000/000/000/5a91131de1a30486.jpg" />
+                        <div>
+                            <p>MySQL讨论组</p>
+                            <p>607位成员</p>
+                            <a href="#">+ 加入小组</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://www.php.cn/upload/system/000/000/000/5a9110857e9ea618.jpg" />
+                        <div>
+                            <p>HTML讨论组</p>
+                            <p>475位成员</p>
+                            <a href="#">+ 加入小组</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://www.php.cn/upload/system/000/000/000/5a9110d3dc066232.jpg" />
+                        <div>
+                            <p>CSS讨论组</p>
+                            <p>332位成员</p>
+                            <a href="#">+ 加入小组</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="left bg">
+                <ul class="v-nav">
+                    <li class="v-list active">
+                        <a href="javascript:;">最新</a>
+                        <span></span>
+                    </li>
+                    <li class="v-list">
+                        <a href="javascript:;">推荐话题</a>
+                        <span></span>
+                    </li>
+                </ul>
+                <!-- 视频教程 -->
+                <div class="v-content">
+                    <!-- 全部 -->
+                    <div class="grade grade-active">
+                        <div class="mc" v-for="data in datalist">
+                            <a href="#">
+                                <img :src="data.url" />
+                             </a>
+                             <div>
+                                 <a href="#">{{data.title}}</a><br />
+                                 <a href="#" style="font-size: 14px;color: #999;">{{data.text}}</a>
+                                 <p>{{data.p}}</p>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- 全部 -->
+                    <div class="grade">
+                        <div class="mc" v-for="data in datalist">
+                            <a href="#">
+                                <img :src="data.url" />
+                             </a>
+                             <div>
+                                 <a href="#">{{data.title}}</a><br />
+                                 <a href="#" style="font-size: 14px;color: #999;">{{data.text}}</a>
+                                 <p>{{data.p}}</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="l1">
+                <div class="l-button">
+                    <a href="#">进入小组列表</a>
+                    <a href="#">+ 发布话题</a>
+                </div>
+                <div class="topic">
+                    <div class="topic-title">
+                        <p>热门话题</p>
+                    </div>
+                    <ul class="topic-nav">
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="行业大牛 ，细说PHP作者，现身PHP中文网直播送书300本，PHP中文网学员超级福利！">行业大牛 ，细说PHP作者，现身PHP中文网直播送书300本，PHP中文网学员超级福利！</a>
+                            <span>69133</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="T楼送书活动又开始 啦！！！回帖编程书籍拿回家！（已结束）">T楼送书活动又开始 啦！！！回帖编程书籍拿回家！（已结束）</a>
+                            <span>35672</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="php中文社区上线！！！！送书啦！！！（结束）'">php中文社区上线！！！！送书啦！！！（结束）'</a>
+                            <span>32612</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="php中文网大型直播公益免费课报名帖。。。">php中文网大型直播公益免费课报名帖。。。</a>
+                            <span>31070</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="php中文网大型公益直播即将开课！从0开始开发PHP框架，并使用原创开发框架仿糗事百科网站（已结束）">php中文网大型公益直播即将开课！从0开始开发PHP框架，并使用原创开发框架仿糗事百科网站（已结束）</a>
+                            <span>26467</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="TP6.0专题: ThinkPHP 6.0 视频+图文教程(独家首发)'">TP6.0专题: ThinkPHP 6.0 视频+图文教程(独家首发)'</a>
+                            <span>25581</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="T楼活动又开始啦!!!! 价值1300元的课程等你来枪（已结束）'">T楼活动又开始啦!!!! 价值1300元的课程等你来枪（已结束）'</a>
+                            <span>23508</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="[独家全程图解]ThinkPHP6框架的下载与安装'">[独家全程图解]ThinkPHP6框架的下载与安装'</a>
+                            <span>23405</span>
+                        </li>
+                        <li class="topic-list">
+                            <i class="iconfont icon-renqi"></i>
+                            <a href="#" title="APP 调微信支付接口 PHP代码 APP端 调用时报-100 什么原因?">APP 调微信支付接口 PHP代码 APP端 调用时报-100 什么原因?</a>
+                            <span>20913</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/footer.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script src="js/community.js"></script>
+    <script src="js/community/community.js"></script>
+</body>
+</html>

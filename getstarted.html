@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开发手册</title>
+    <link rel="icon" href="img/logo1.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/tool.css">
+	<link rel="stylesheet" href="css/getstarted.css">
+</head>
+<body>
+    <script src="js/nav-bar.js"></script>
+    <div class="container">
+        <div class="search-for">
+            <div class="search-left left">
+                <img src="https://img.php.cn/upload/article/000/000/003/5b45c06b5c808348.png" />
+            </div>
+            <div class="search-right right">
+                <h2>开发手册</h2>
+                <p>学的不仅是技术，更是梦想！</p>
+                <span>最新更新时间：2020-1-16 16:27:32</span>
+            </div>
+        </div>
+        <div id="app" class="content">
+            <div class="classification">
+                <ul class="nav-bar">
+                    <li class="title">全部分类</li>
+                    <li class="list"><a href="#tool01"><i class="iconfont icon-daima"></i>下载站首页</a></li>
+                    <li class="list"><a href="#tool02"><i class="iconfont icon-daima"></i>HTML/CSS</a></li>
+                    <li class="list"><a href="#tool03"><i class="iconfont icon-daima"></i>JavaScript</a></li>
+                    <li class="list"><a href="#tool04"><i class="iconfont icon-daima"></i>服务端</a></li>
+                    <li class="list"><a href="#tool05"><i class="iconfont icon-daima"></i>数据库</a></li>
+                    <li class="list"><a href="#tool06"><i class="iconfont icon-daima"></i>移动端</a></li>
+                    <li class="list"><a href="#tool07"><i class="iconfont icon-daima"></i>XML</a></li>
+                    <li class="list"><a href="#tool08"><i class="iconfont icon-daima"></i>ASP.NET</a></li>
+                    <li class="list"><a href="#tool09"><i class="iconfont icon-daima"></i>Web Services</a></li>
+                    <li class="list"><a href="#tool10"><i class="iconfont icon-daima"></i>开发工具</a></li>
+                    <li class="list"><a href="#tool11"><i class="iconfont icon-daima"></i>网站建设</a></li>
+                </ul>
+            </div>
+            <div class="new">
+                <!-- 官方推荐 -->
+                <div id="tool01" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">官方推荐</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in official">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+                <!-- HTML/CSS -->
+                <div id="tool02" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">HTML/CSS</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in htmllist">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+                <!-- JavaScript -->
+                <div id="tool03" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">JavaScript</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in jslist">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- 服务端 -->
+                <div id="tool04" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">服务端</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in serverlist">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- 数据库 -->
+                <div id="tool05" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">数据库</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in mysqlList">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- 移动端 -->
+                <div id="tool06" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">移动端</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in appList">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- XML -->
+                <div id="tool07" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">XML</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in xmlList">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- ASP.NET -->
+                <div id="tool08" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">ASP.NET</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in aspList">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- Web Services -->
+                <div id="tool09" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">Web Services</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in webServices">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				<!-- 开发工具 -->
+                <div id="tool10" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">开发工具</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in development">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+				<!-- 网站建设 -->
+                <div id="tool11" class="tool">
+                    <div class="new-tool">
+                        <div class="title">
+                            <a class="left" href="javascript:;">网站建设</a>
+                        </div>
+                    </div>
+                    <div class="download-tool">
+                        <ul class="download-nav">
+                            <!-- Notepad++7.3.1 -->
+                            <li class="download-list" v-for="data in website">
+                                <a class="download-link" href="#">
+                                    <img :src="data.ur1" />
+                                    <div>
+                                        <h3 :title="data.title">{{data.title}}</h3>
+                                        <p :title="data.text">{{data.text}}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/footer.js"></script>
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	<script src="js/getstarted.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+.underline:nth-child(2){
+    background-color: #363c41;
+}
+.container{
+    margin-top: 15px;
+	background-color: #fff;
+}
+.introduction{
+	width: 810px;
+	padding: 20px 35px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.introduction img{
+	float: left;
+	margin-right: 30px;
+}
+.introduction div{
+	float: left;
+}
+/* 等级 */
+.spjc{
+    float: left;
+    width: 140px;
+    margin-left: 25px;
+}
+.v-content{
+    overflow: hidden;
+}
+.v-nav{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 320px;
+}
+.v-list{
+    float: left;
+    width: 50px;
+    height: 23px;
+    text-align: center ;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+}
+.v-list a{
+    float: left;
+    padding: 5px;
+}
+.v-list span{
+    float: left;
+    width: 20px;
+    margin-left: 13px; 
+}
+.active a{
+    color: #4a7acc;
+}
+.active span{
+    border-bottom: 5px solid #4a7acc;
+}
+/* 视频教程 */
+.v-content{
+    padding: 10px 25px;
+}
+.grade{
+	display: none;
+}
+.grade-active{
+	display: block;
+}
+.mc{
+    float: left;
+    position: relative;
+    width: 260px;
+    height: 240px;
+    margin-right: 27px;
+    margin-top: 5px;
+}
+.mc:last-child{
+    margin-right: 0px;
+}
+.mc img{
+    width: 260px;
+    height: 150px;
+    border-radius: 8px;
+}
+.mc p{
+    padding: 10px 0;
+}
+.mc ul li{
+    float: left;
+    color: #666666;
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-right: 1px solid #666666;
+}
+.mc ul li:last-child{
+    border: 0px;
+    margin-left: 10px;
+}
+/* 播放按钮 */
+.video-hover{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    margin-top: -40px;
+    margin-right: -40px;
+    z-index: 10;
+    transition: all 0.3s linear;
+    transform: scale(2);
+    border: 1px solid #fff;
+    opacity: 0;
+    border-radius: 50%;
+}
+.video-hover img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+.mc a:hover>.video-hover{
+    transition: all 0.3s linear;
+    transform: scale(1);
+    opacity: 1;
+    border-radius: 50%;
+}

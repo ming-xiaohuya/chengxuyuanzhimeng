@@ -1,0 +1,152 @@
+body{
+    background-color: #eee;
+}
+.container{
+    overflow: hidden;
+    margin-top: 30px;
+}
+.underline:nth-child(4){
+    background-color: #363c41;
+}
+/* 左 */
+.group{
+    overflow: hidden;
+    padding: 10px 0px 50px 0px;
+    background-color: #fff;
+}
+/* 热门小组 */
+.title{
+    width: 880px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+.group ul{
+    padding: 20px 0;
+}
+.group img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 41px;
+    border-radius: 8px;
+}
+.group ul li{
+    margin-left: -20px;
+}
+.group ul li div{
+    float: left;
+    padding-left: 10px;
+}
+.group li div p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.group li div p:nth-child(1){
+    color: #000;
+    font-size: 16px;
+}
+.group li div a{
+    color: #009a61;
+}
+/* 社区 */
+.bg{
+    background-color: #fff;
+    margin-top: 30px;
+}
+.v-nav{
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+.v-list{
+    float: left;
+    padding: 20px;
+}
+.active{
+    border-bottom: 2px solid red;
+}
+.grade{
+    width: 900px;
+    padding-bottom: 30px;
+    display: none;
+}
+.grade-active{
+    display: block;
+}
+.mc{
+    height: 111px;
+    margin-top: 14px;
+    border-bottom: 1px solid #eee;
+}
+.mc:last-child{
+    border: 0px;
+}
+.mc img{
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.mc div{
+    float: right;
+    width: 780px;
+}
+.mc div a{
+    display: inline-block;
+    height: 21px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+.mc div p{
+    font-size: 14px;
+}
+/* 右 */
+.right div{
+    float: right;
+    width: 280px;
+}
+.l-button a{
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    background-color: #5FB878;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.topic{
+    background-color: #fff;
+}
+.topic-title{
+    height: 50px;
+    line-height: 50px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #f0f0f0;
+}
+.topic-list{
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px dotted #f2f2f2;
+}
+.topic-list:last-child{
+    border: 0px;
+}
+.topic-list i{
+    float: left;
+    color: red;
+    font-size: 24px;
+}
+.topic-list a{
+    float: left;
+    width: 203px;
+    font-size: 14px;
+    color: #999;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.topic-list span{
+    float: left;
+    font-size: 14px;;
+}

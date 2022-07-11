@@ -1,0 +1,13 @@
+document.writeln("<!-- 页尾 -->");
+document.writeln("    <div class=\'footer\'>");
+document.writeln("        <div class=\'conter\'>");
+document.writeln("            <div class=\'left\'>");
+document.writeln("                <img src=\'../../img/logo.png\' />");
+document.writeln("                <p>菜鸟程序员：学的不仅是技术，更是梦想！</p>");
+document.writeln("            </div>");
+document.writeln("            <div class=\'right\'>");
+document.writeln("                <img src=\'https://www.php.cn/static/images/phpcn_erwei.jpg\' />");
+document.writeln("                <img src=\'https://www.php.cn/static/images/qq.jpg\' />");
+document.writeln("            </div>");
+document.writeln("        </div>");
+document.writeln("    </div>");

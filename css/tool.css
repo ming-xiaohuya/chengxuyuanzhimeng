@@ -1,0 +1,103 @@
+.underline:last-child{
+    background-color: #363c41;
+}
+.container{
+    overflow: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.search-left img{
+    width: 271px;
+    border-radius: 16px;
+}
+.search-right{
+    width: 825px;
+    height: 145px;
+    line-height: 30px;
+}
+.search-right h2{
+    font-weight: normal;
+    margin-top: 10px;
+}
+.search-right p{
+    padding: 15px 0;
+}
+.search-right span{
+    float: right;
+}
+/* 工具 */
+.new{
+    width: 990px;
+}
+.new-tool .title{
+    overflow: hidden;
+    padding: 10px 15px;
+    background-color: #eee;
+    box-shadow: 0 2px 2px 0 rgba(207, 216, 221, .7);
+}
+.new-tool .title i{
+    margin-right: 5px;
+}
+.new-tool .title a:nth-child(1){
+    color: #337ab7;
+}
+.new-tool .title a:nth-child(2){
+    color: #808080;
+}
+.new-tool .title a:hover{
+    color: #000;
+}
+/* 工具下载 */
+.download-tool{
+    overflow: hidden;
+    padding: 30px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(207, 216, 221, .7);
+    margin-bottom: 15px;
+}
+.download-list{
+    float: left;
+    margin: 0 7px 30px 8px;
+}
+.download-link{
+    display: inline-block;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transform: scale(1);
+    transition: all 1s ease 0s;
+}
+.download-link:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 13px rgba(0,0,0,0.2);
+}
+.download-link img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.download-link div{
+    float: left;
+    width: 160px;
+    margin-left: 5px;
+}
+.download-link h3{
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.download-link p{
+    color: #999;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+}

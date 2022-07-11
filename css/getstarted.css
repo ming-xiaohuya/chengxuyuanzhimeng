@@ -1,0 +1,20 @@
+.underline:last-child{
+    background-color: #000;
+}
+.underline:nth-child(3){
+    background-color: #363c41;
+}
+.download-list{
+	margin-bottom: 10px;
+	margin-right: 12px;
+}
+.download-link{
+	width: 290px;
+	height: 50px;
+}
+.download-link div{
+	width: 234px;
+}
+.download-link div h3{
+	font-size: 16px;
+}

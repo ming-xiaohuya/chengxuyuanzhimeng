@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教学视频</title>
+    <link rel="icon" href="img/logo1.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/video-tutorial.css">
+</head>
+<body>
+    <script src="js/nav-bar.js"></script>
+    <div class="container" style="background-color: #eee;">
+        <div class="introduction">
+            <img src="https://www.runoob.com/wp-content/uploads/2013/07/pic_html5.gif" />
+            <div>
+                <p>HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。</p><br />
+                <p>HTML5的设计目的是为了在移动设备上支持多媒体。</p><br />
+                <p>HTML5 简单易学。</p>
+            </div>
+        </div>
+    </div>
+    <div id="app" class="container">
+        <div class="spjc">
+            <h1>视频教程</h1>
+        </div>
+        <ul class="v-nav">
+            <li class="v-list active">
+                <a href="javascript:;">全部</a>
+                <span></span>
+            </li>
+            <li class="v-list">
+                <a href="javascript:;">初级</a>
+                <span></span>
+            </li>
+            <li class="v-list">
+                <a href="javascript:;">进阶</a>
+                <span></span>
+            </li>
+            <li class="v-list">
+                <a href="javascript:;">高级</a>
+                <span></span>
+            </li>
+        </ul>
+        <!-- 视频教程 -->
+        <div class="v-content">
+            <!-- 全部 -->
+            <div class="grade grade-active">
+                <div class="mc" v-for="data in datalist">
+                    <a href="video/player01.html" :title="data.title">
+                        <img :src="data.url" />
+                        <p>{{data.title}}</p>
+                        <ul>
+                            <li>
+                                <i class="iconfont icon-view"></i>
+                                <span>{{data.popularity}}</span>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-icon_rukou"></i>
+                                <span>{{data.downloads}}</span>
+                            </li>
+                        </ul>
+                        <div class="video-hover">
+                            <img :src="data.img" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 初级 -->
+            <div class="grade">
+                <div class="mc" v-for="data in primarylist">
+                    <a href="#" :title="data.title">
+                        <img :src="data.url" />
+                        <p>{{data.title}}</p>
+                        <ul>
+                            <li>
+                                <i class="iconfont icon-view"></i>
+                                <span>{{data.popularity}}</span>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-icon_rukou"></i>
+                                <span>{{data.downloads}}</span>
+                            </li>
+                        </ul>
+                        <div class="video-hover">
+                            <img :src="data.img" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 中级 -->
+            <div class="grade">
+                <div class="mc" v-for="data in intermediatelist">
+                    <a href="#" :title="data.title">
+                        <img :src="data.url" />
+                        <p>{{data.title}}</p>
+                        <ul>
+                            <li>
+                                <i class="iconfont icon-view"></i>
+                                <span>{{data.popularity}}</span>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-icon_rukou"></i>
+                                <span>{{data.downloads}}</span>
+                            </li>
+                        </ul>
+                        <div class="video-hover">
+                            <img :src="data.img" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 高级 -->
+            <div class="grade">
+                <div class="mc" v-for="data in advancedlist">
+                    <a href="#" :title="data.title">
+                        <img :src="data.url" />
+                        <p>{{data.title}}</p>
+                        <ul>
+                            <li>
+                                <i class="iconfont icon-view"></i>
+                                <span>{{data.popularity}}</span>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-icon_rukou"></i>
+                                <span>{{data.downloads}}</span>
+                            </li>
+                        </ul>
+                        <div class="video-hover">
+                            <img :src="data.img" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script src="js/video-tutorial.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

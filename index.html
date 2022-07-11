@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜鸟程序员</title>
+	<link rel="icon" href="img/logo1.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<!--  自定义css -->
+	<link rel="stylesheet" href="css/index-css.css">
+	<link rel="stylesheet" href="css/footer.css">		
+</head>
+
+<body>
+    <nav id="nav">
+		<div id="logo">
+			<img src="img/logo.png" />
+		</div>
+        <!-- 导航栏 -->  
+      	<ul id="navbar-ul1">
+			<li class="nav-li underline" style="width: 70px;background-color: #363c41;">
+				<a class="nav-a" href="index.html">首页</a>
+				<span></span>
+			</li>
+			<li class="nav-li underline">
+				<a class="nav-a" href="video-tutorial.html">视频教程</a>
+				<span></span>
+			</li>
+			<li class="nav-li underline">
+				<a class="nav-a" href="getstarted.html">入门教程</a>
+				<span></span>
+			</li>
+			<li class="nav-li underline">
+				<a class="nav-a" href="community.html">社区问答</a>
+				<span></span>
+			</li>
+			<li class="nav-li underline list">
+				<a class="nav-a" href="article.html">技术文章
+					<i class="fa fa-caret-down" style="font-size:24px;color: #afafaf;"></i>
+				</a>
+				<span></span>
+				<div class="drop-down-list"  style="position: absolute;z-index: 3">
+					<ul class="down-list">
+						<li class="nav-list" style="margin-top: 5px;">
+							<a href="article/headlines.html" target="_blank">头条&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="nav-list" style="margin-top: 5px;">
+							<a href="#">博客&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+						</li>
+						<li class="nav-list">
+							<a href="article/phptutorials.html" target="_blank">PHP教程</a>
+						</li>
+						<li class="nav-list">
+							<a href="#">HTML教程</a>
+						</li>
+						<li class="nav-list">
+							<a href="#">CSS教程</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-li underline list">
+				<a class="nav-a" href="resources.html" target="_blank">资源下载
+					<i class="fa fa-caret-down" style="font-size:24px;color: #afafaf;"></i>
+				</a>
+				<span></span>
+				<div class="drop-down-list" style="position: absolute;z-index: 3">
+					<ul class="down-list">
+						<li class="nav-list" style="margin-top: 5px;">
+							<a href="resources/jsmore.html" target="_blank">js特效&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="nav-list"  style="margin-top: 5px;">
+							<a href="tool.html" target="_blank">PHP工具</a>
+						</li>
+						<li class="nav-list">
+							<a href="#">在线工具&nbsp;&nbsp;</a>
+						</li>
+						<li class="nav-list">
+							<a href="getstarted.html">手册下载</a>
+						</li>
+						<li class="nav-list">
+							<a href="#">学习课件&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-li  underline">
+				<a class="nav-a" href="tool.html" target="_blank">工具下载</a>
+				<span></span>
+			</li>
+		</ul>     
+      <!-- 用户登录栏 -->
+      <ul id="navbar-ul2">
+         <li class="nav-li " style="width:60px;"><a class="nav-a" href="#"><b>登录</b></a></li>
+        <li class="nav-li " style="width:60px;"><a class="nav-a" href="#"><b>注册</b></a></li>
+      </ul>   
+    </nav>
+
+    <div id="subject">
+      <div class="content">
+        <div id="content-left">
+          	<ul class="nav-left dropright" style="float: left;margin-top: 13px;">
+				<!-- 后端开发 -->
+				<li class="nav-left-li" aria-haspopup="true" aria-expanded="false">
+					<a href="">后端开发</a>
+					<i class="fa fa-angle-right"></i>
+					<!-- 列表向右显示 -->
+					<div class="dropdown-menu" style="margin-left:-1px;margin-top: -13px;">
+						<div class="dropdown-menu-top">
+							<span class="small-title">开发语言</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">PHP</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Python3</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Java</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">C/C#</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">C++</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Linux</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Django</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Servle</a>
+								</li>
+							</ul>
+						</div>
+							<!-- Thinkphp6.0正式版视频教程 -->
+							<div class="dropdown-menu-bottom">
+								<div class="dropdown-content" title="Thinkphp6.0正式版视频教程">                  		
+									<a class="nav-link disabled" href="#">
+										<div class="dropdown-img">
+											<img src="https://img.php.cn/upload/course/000/000/015/5e0d82773b4fe808.png">
+										</div>                      
+										<div class="title-h3">
+											<h3 class="font-size-12">Thinkphp6.0正式版视频教程</h3>
+											<div class="text-span">
+												<span class="font-size-12">中级</span>
+												<span class="font-size-12">实战</span>
+												<span class="font-size-12">共23章</span>                          
+											</div>
+											<span>56769人参与</span>
+										</div> 
+									</a>
+								</div>
+								<!-- TP6.0搭建个人博客实战 -->
+								<div class="dropdown-content" title="TP6.0搭建个人博客实战">               		
+									<a class="nav-link disabled" href="#">
+										<div class="dropdown-img">
+											<img src="https://img.php.cn/upload/course/000/000/001/5f606a9a7fe99960.jpg">
+										</div>                       
+										<div class="title-h3">
+											<h3 class="font-size-12">TP6.0搭建个人博客实战</h3>
+											<div class="text-span">
+												<span class="font-size-12">初级</span>
+												<span class="font-size-12">实战</span>
+												<span class="font-size-12">共23章</span>                           
+											</div>
+											<span>21096人参与</span>
+										</div> 
+									</a>
+								</div>
+								<!-- PHP8、我来也 -->
+								<div class="dropdown-content" title="PHP8、我来也">                  		
+									<a class="nav-link disabled" href="#">
+										<div class="dropdown-img">
+											<img src="https://img.php.cn/upload/course/000/000/013/6049da2b3898c385.jpg">
+										</div>                      
+										<div class="title-h3">
+											<h3 class="font-size-12">PHP8、我来也</h3>
+											<div class="text-span">
+												<span class="font-size-12">初级</span>
+												<span class="font-size-12">实战</span>
+												<span class="font-size-12">共35章</span>                          
+											</div>
+											<span>1.932人参与</span>
+										</div> 
+									</a>
+								</div>
+							<!-- PHP实战之微信支付视频教程 -->
+							<div class="dropdown-content" title="PHP实战之微信支付视频教程">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/001/5d242759adb88970.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">PHP实战之微信支付视频教程</h3>
+										<div class="text-span">
+											<span class="font-size-12">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共5章</span>                          
+										</div>
+										<span>11153人参与</span>
+									</div> 
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- 前端开发 -->
+				<li class="nav-left-li">
+					<a href="">前端开发</a>
+					<i class="fa fa-angle-right"></i>
+					<div class="dropdown-menu" style="margin-left:-1px;margin-top: -13px;">
+						<!-- 列表向右显示 -->
+						<div class="dropdown-menu-top" style="height: 240px;">
+							<span class="small-title">HTML/CSS</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">HTML</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">CSS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">HTML5</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Bootstarp</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">foundation</a>
+								</li>
+							</ul>
+							<!-- JavaScript -->
+							<span class="small-title">JavaScript</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">JavaScript</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">jQuery</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">JSON</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">HTML DOM</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Node.js</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">AJAX</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Node.js</a>
+								</li>
+							</ul>
+						</div>
+						<!-- 2018前端入门_HTML5 -->
+						<div class="dropdown-menu-bottom" style="height: 200px;">
+							<div class="dropdown-content" title="2018前端入门_HTML5">                  		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/126/153/5aa23f0ded921649.jpg">
+									</div>                      
+									<div class="title-h3">
+									<h3 class="font-size-12">2018前端入门_HTML5</h3>
+										<div class="text-span">
+											<span class="font-size-12">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共35章</span>                          
+										</div>
+										<span>10899人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- 30分钟学会网站布局 -->
+							<div class="dropdown-content" title="30分钟学会网站布局">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/001/120/5a9fb97057b15707.jpeg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">30分钟学会网站布局</h3>
+										<div class="text-span">
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">初级</span>
+											<span class="font-size-12">共10章</span>                          
+										</div>
+										<span>76963人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- CSS视频教程 -->
+							<div class="dropdown-content" title="CSS视频教程">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/126/153/5ab346fc62ce4221.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">CSS视频教程</h3>
+										<div class="text-span">
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">初级</span>
+											<span class="font-size-12">共25章</span>                          
+										</div>
+										<span>12682人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- HTML5视频教程 -->
+							<div class="dropdown-content" title="HTML5视频教程">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/001/5d1c6ddbecdb1707.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">HTML5视频教程</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">实战</span>
+											<span class="font-size-12">中级</span>
+											<span class="font-size-12">共25章</span>                          
+										</div>
+										<span>21587人参与</span>
+									</div> 
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- 移动开发 -->
+				<li class="nav-left-li">
+					<a href="#">移动开发</a>
+					<i class="fa fa-angle-right"></i>
+					<!-- 列表向右显示 -->
+					<div class="dropdown-menu" style="margin-left:-1px;margin-top: -13px;">
+						<div class="dropdown-menu-top">
+							<span class="small-title">移动开发</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Android</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Swift</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">jQuery Mobile</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">ionic</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">ios</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown-menu-bottom">
+							<!-- jQueryMobile视频教学 -->
+							<div class="dropdown-content" title="jQueryMobile视频教学">                  		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a1e2953da3c4679.jpg">
+									</div>                      
+									<div class="title-h3">
+										<h3 class="font-size-12">jQueryMobile视频教学</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共12章</span>                          
+										</div>
+										<span>14957人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- AndroidStudio技巧全集 -->
+							<div class="dropdown-content" title="AndroidStudio技巧全集">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a1e28a9aa79e911.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">AndroidStudio技巧全集</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共13章</span>                          
+										</div>
+										<span>15849人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- Swift语言视频教程 -->
+							<div class="dropdown-content" title="Swift语言视频教程">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a1e13dd13f11301.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">Swift语言视频教程</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共40章</span>                          
+										</div>
+										<span>12699人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- Swift入门视频教程 -->
+							<div class="dropdown-content" title="Swift入门视频教程">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a161e2d393cb585.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">Swift入门视频教程</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共44章</span>                          
+										</div>
+										<span>15460人参与</span>
+									</div> 
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- 数据库 -->
+				<li class="nav-left-li"><a href="">数据库</a>
+					<i class="fa fa-angle-right"></i>
+					<!-- 列表向右显示 -->
+					<div class="dropdown-menu" style="margin-left:-1px;margin-top: -13px;">
+						<div class="dropdown-menu-top">
+							<span class="small-title">数据库</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">MySQL</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">SQL</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">SQLitm</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">MongoDB</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Redis</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Memcached</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown-menu-bottom">
+							<!-- MySQL面向过程快速入门 -->
+							<div class="dropdown-content" title="MySQL面向过程快速入门">                  		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a372e0cb6736575.jpg">
+									</div>                      
+									<div class="title-h3">
+										<h3 class="font-size-12">MySQL面向过程快速入门</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共12章</span>                          
+										</div>
+										<span>11090人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- MySQL面向对象编程快速入门 -->
+							<div class="dropdown-content" title="MySQL面向对象编程快速入门">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a372b552a2c4233.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">MySQL面向对象编程快速入门</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共10章</span>                          
+										</div>
+										<span>32113人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- PDO操作快速入门 -->
+							<div class="dropdown-content" title="PDO操作快速入门">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a3728258bf9f213.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">PDO操作快速入门</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">中级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共11章</span>                          
+										</div>
+										<span>27020人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- MySQL权威开发指南 -->
+							<div class="dropdown-content" title="MySQL权威开发指南">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/015/5d27f2e217a11252.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">MySQL权威开发指南</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共16章</span>                          
+										</div>
+										<span>39076人参与</span>
+									</div> 
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-left-li"><a href="">服务器运维&下载</a>
+					<i class="fa fa-angle-right"></i>
+					<!-- 列表向右显示 -->
+					<div class="dropdown-menu" style="margin-left:-1px;margin-top: -13px;">
+						<div class="dropdown-menu-top" style="height: 240px;">
+							<!-- 常用软件 -->
+							<span class="small-title">常用软件</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Notepad++7.3.1</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">SublimeText Mac版</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Wamp Server</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">VS Code</a>
+								</li>
+							</ul>
+							<!-- 网站源码 -->
+							<span class="small-title">网站源码</span>
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">前端模板</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">后端模板</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">小程序源码</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">微信源码</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">APP源码</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Bootstrap模板</a>
+								</li>
+							</ul>
+						</div>
+						<!-- 《PHP工具箱》最新教学视频 -->
+						<div class="dropdown-menu-bottom" style="height: 200px;">
+							<div class="dropdown-content" title="《PHP工具箱》最新教学视频">                  		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a40a5ac656b3153.jpg">
+									</div>                      
+									<div class="title-h3">
+									<h3 class="font-size-12">《PHP工具箱》最新教学视频</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">原创</span>
+											<span class="font-size-12">共13章</span>                          
+										</div>
+										<span>30651人参与</span>
+									</div> 
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- 在线工具箱 -->
+				<li class="nav-left-li"><a href="">在线工具箱</a>
+					<i class="fa fa-angle-right"></i>
+					<!-- 列表向右显示 -->
+					<div class="dropdown-menu" style="margin-left:-1px;margin-top: -13px;">
+						<div class="dropdown-menu-top">
+							<span class="small-title">在线工具</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">JS/HTML格式化工具</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">CSS代码格式化工具</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">HTML/JS转换工具</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">UTF-8编码转换工具</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">Escape加密解密工具</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">汉字转拼音工具</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">特殊字符号大全</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">THML特殊符号对照表</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown-menu-bottom">
+							<!-- MySQL面向过程快速入门 -->
+							<div class="dropdown-content" title="Node.js中文手册">                  		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a6848743a2b9344.jpg">
+									</div>                      
+									<div class="title-h3">
+										<h3 class="font-size-12">Node.js中文手册</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共0章</span>                          
+										</div>
+										<span>1437人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- MySQL面向对象编程快速入门 -->
+							<div class="dropdown-content" title="JSON中文手册">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a162ad093ab8241.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">JSON中文手册</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共0章</span>                         
+										</div>
+										<span>2163人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- PDO操作快速入门 -->
+							<div class="dropdown-content" title="ionic参考手册">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a162a835bd25655.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">ionic参考手册</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共0章</span>                          
+										</div>
+										<span>644人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- MySQL权威开发指南 -->
+							<div class="dropdown-content" title="DOS实例手册">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/000/003/5a16269192055444.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">DOS实例手册</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共0章</span>                          
+										</div>
+										<span>807人参与</span>
+									</div> 
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- 常用类库 -->
+				<li class="nav-left-li"><a href="#">常用类库</a>
+					<i class="fa fa-angle-right"></i>
+					<!-- 列表向右显示 -->
+					<div class="dropdown-menu" style="margin-left:-1px;margin-top: -13px;">
+						<div class="dropdown-menu-top" style="height: 240px;">
+							<span class="small-title">类库分类</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">分页类库</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">图片类库</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">验证码类库</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">文件上传</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">字符串处理</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">ip库</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">百度地图类库</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">微信接口类库</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">分类库</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">缓存库</a>
+								</li>
+							</ul>
+							<!-- 常用类库 -->
+							<span class="small-title">常用类库</span>
+							<!-- 分隔线 -->
+							<div class="dropdown-divider"></div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">PHPExcel-1.8类库（值得收藏）</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">PHP无限分类</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">PHP图片上传</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#">PHP的curt封装类用法实例</a>
+								</li>
+							</ul>
+						</div>
+						<!-- CSS的美化功能 -->
+						<div class="dropdown-menu-bottom" style="height: 200px;">
+							<div class="dropdown-content" title="CSS的美化功能">                  		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/117/584/5aa8cd08b9cf9363.jpg">
+									</div>                      
+									<div class="title-h3">
+										<h3 class="font-size-12">CSS的美化功能</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共10章</span>                          
+										</div>
+										<span>32384人参与</span>
+									</div> 
+								</a>
+							</div>
+							<!-- PHP制作阴阳历转换的日历插件 -->
+							<div class="dropdown-content" title="PHP制作阴阳历转换的日历插件">               		
+								<a class="nav-link disabled" href="#">
+									<div class="dropdown-img">
+										<img src="https://img.php.cn/upload/course/000/117/584/5aa77c4cbcdea196.jpg">
+									</div>                       
+									<div class="title-h3">
+										<h3 class="font-size-12">PHP制作阴阳历转换的日历插件</h3>
+										<div class="text-span">
+											<span class="font-size-12 ">初级</span>
+											<span class="font-size-12">实战</span>
+											<span class="font-size-12">共6章</span>                          
+										</div>
+										<span>39479人参与</span>
+									</div> 
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+        </div>
+        <div id="content-right">
+          <div id="content-right-top" >
+            <ul class="content-top-ul">
+              <li class="nav-li" ><a class="nav-a" href="" style="color: #000">学习线路</a></li>
+              <li class="nav-li"><a class="nav-a" href="" style="color: #000">在线工具</a></li>
+              <li class="nav-li"><a class="nav-a" href="" style="color: #000">社区问答</a></li>
+            </ul>
+            <div class="container mt-3">
+              <form action="">
+                <div class="input-group mb-3"> 
+                  <input type="text" class="form-control" placeholder="输入关键字搜索" id="usr" name="username">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-search" style="font-size:18px;"></i></span>
+                  </div>   
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- 轮播图片的实现 -->
+         <div id="demo" class="carousel slide" data-ride="carousel" style="float: left;margin-top: -5px;"> 
+                <!-- 指示符 -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+			  <!-- <li data-target="#demo" data-slide-to="3"></li> -->
+            </ul>             
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+            	<div class="carousel-item active">
+                	<img src="https://img.php.cn/upload/article/000/000/003/6093abebf1766794.jpg">
+              	</div>
+				<!-- <div class="carousel-item">
+					<img src="img/carousel/60334c263c6d2652.png">
+				</div> -->
+				<div class="carousel-item">
+					<img src="https://img.php.cn/upload/article/000/000/001/6034a327aef30703.png">
+				</div>
+				<div class="carousel-item">
+					<img src="https://img.php.cn/upload/article/000/000/001/5fabba9a8557c153.jpg">
+				</div>
+			</div>             
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>          
+          </div>
+
+          <div id="content-right-bottom"> 
+            <div class="content-img">
+              <img src="https://www.php.cn/static/images/index_yunv.jpg">
+            </div>
+            <div class="content-img">
+               <img src="https://www.php.cn/static/images/index_php_item2_.png?1">
+            </div>
+            <div class="content-img">
+               <img src="https://www.php.cn/static/images/index_php_item3.jpg?1">
+            </div>
+            <div class="content-img">
+             	<img src="https://www.php.cn/static/images/index_php_new4.jpg?1">
+           </div>     
+        </div>    
+
+      </div>
+     </div>
+      <!-- 广告 -->
+      <div style="width: 1200px;margin-top: 20px;">
+      	<a href="">
+      		<img src="img/advertising/5f4ddd270f8d4257.png" style="border-radius: 8px;">
+      	</a>
+      </div>
+      <div class="recommend">
+      	
+      	<div id="headlines" class="fillet">
+      		<div class="subtitle">头条</div>
+      		<div class="list-group">
+			    <a href="#" class="list-group-item" title="php中文网原创视频：《天龙八部》公益php培训系列课程汇总！">php中文网原创视频：《天龙八部》公益php培训系列课程汇总！</a>
+			    <a href="#" class="list-group-item" title="php中文网《玉女心经》公益PHP WEB培训系列课程汇总">php中文网《玉女心经》公益PHP WEB培训系列课程汇总</a>
+			    <a href="#" class="list-group-item" title="通过技术视角看看不一样的第七次全国人口普查！！">通过技术视角看看不一样的第七次全国人口普查！！</a>
+			    <a href="#" class="list-group-item" title="鸟哥惠新宸：从Web初学者到PHP核心开发者-2021全球开源技术峰会">鸟哥惠新宸：从Web初学者到PHP核心开发者-2021全球开源技术峰会</a>
+			    <a href="#" class="list-group-item" title="字节跳动常考的基础计算机网络面试题，快来看看！">字节跳动常考的基础计算机网络面试题，快来看看！</a>
+			    <a href="#" class="list-group-item" title="前端框架之争：除了Vue、Angular和React还有谁与之争锋？">前端框架之争：除了Vue、Angular和React还有谁与之争锋？</a>
+			    <a href="#" class="list-group-item" title="php前世今生与未来展望">php前世今生与未来展望</a>
+			    <a href="#" class="list-group-item" title="推荐一个免费开源的数据库管理开发工具，赶紧下载吧！">推荐一个免费开源的数据库管理开发工具，赶紧下载吧！</a>
+			    <a href="#" class="list-group-item" title="值得收藏的52条提升性能的SQL优化策略">值得收藏的52条提升性能的SQL优化策略</a>
+				<a href="#" class="list-group-item" title="世上最全的PHP详解（快速入门）">世上最全的PHP详解（快速入门）</a>
+				<a href="#" class="list-group-item" title="PHP创始人​​​​​​​和Swoole创始人投反对票，协程提案Fiber引激辩">PHP创始人​​​​​​​和Swoole创始人投反对票，协程提案Fiber引激辩</a>
+				<a href="#" class="list-group-item" title="推荐14个强大的代码编辑网站，快放入收藏夹吧！">推荐14个强大的代码编辑网站，快放入收藏夹吧！</a>
+			</div>
+      	</div>
+      	<div id="latest-courses" class="fillet">
+      		<div class="subtitle">最新课程</div>
+      		<div class="curriculum">
+      			<a href="">
+      				<img src="https://img.php.cn/upload/course/000/000/001/60862c6ba99af257.png">
+      				<div class="container-2">				 
+					  <h6><span class="badge badge-secondary">中级</span>在线考试系统实战【公益课】</h6>
+					</div>
+      			</a>
+      		</div>
+
+      		<div class="curriculum">
+      			<a href="">
+      				<img src="https://img.php.cn/upload/course/000/000/015/6077fc698da25674.png">
+      				<div class="container-2">				 
+					  <h6><span class="badge badge-secondary">中级</span>ECMAScrip 6 入门</h6>
+					</div>
+      			</a>
+      		</div>
+
+      		<div class="curriculum">
+      			<a href="">
+      				<img src="https://img.php.cn/upload/course/000/000/015/6077fc297bdfc205.png">
+      				<div class="container-2">				 
+					  <h6><span class="badge badge-secondary">中级</span>前端实战案例大全</h6>
+					</div>
+      			</a>
+      		</div>
+
+      		<div class="curriculum">
+      			<a href="">
+      				<img src="https://img.php.cn/upload/course/000/000/015/6077fb8677ac6448.png">
+      				<div class="container-2">				 
+					  <h6><span class="badge badge-secondary">中级</span>Vue.js开发基础</h6>
+					</div>
+      			</a>
+      		</div>
+
+      		<div class="curriculum">
+      			<a href="">
+      				<img src="https://img.php.cn/upload/course/000/000/015/6077fb46b50e5744.png">
+      				<div class="container-2">				 
+					  <h6><span class="badge badge-secondary">中级</span>Bootstrap常用样式组件与实战</h6>
+					</div>
+      			</a>
+      		</div>
+
+      		<div class="curriculum">
+      			<a href="">
+      				<img src="https://img.php.cn/upload/course/000/000/015/6077fb0393cf2431.jpeg ">
+      				<div class="container-2">				 
+						<h6><span class="badge badge-secondary">中级</span>jQuery以Ajax基础与实战</h6>
+					</div>
+      			</a>
+      		</div>
+
+      	</div>
+      	<div id="common-manual" class="fillet">
+      		<div class="subtitle">常用手册</div>
+      		 <ul class="list-group">
+				<li class="list-group-item" style=" margin-top: 10px;">
+					<img src="https://www.php.cn/upload/system/000/000/001/57d55fe881432245.jpg">
+					<div class="manual">
+						<a href="#">php手册</a>
+						<a href="#">Linux手册</a>
+						<a href="#">ThinkPHP6.0</a>
+						<a href="#">CI手册大全</a>
+					</div>					
+				</li>
+				<li class="list-group-item">
+					<img src="https://www.php.cn/upload/system/000/000/001/57d55f537896d439.jpg">
+					<div class="manual">
+						<a href="#">JavaScript中文参考手册</a>
+						<a href="#">jQuery手册大全</a>
+					</div>					
+				</li>
+				<li class="list-group-item">
+					<img src="https://www.php.cn/upload/system/000/000/001/57d560a2c0e5f831.jpg">
+					<div class="manual">
+						<a href="#">MySQL参考手册大全</a>
+						<a href="#">laravel5.8速查表</a>
+					</div>					
+				</li>
+				<li class="list-group-item">
+					<img src="https://www.php.cn/upload/system/000/000/001/57d56222bfab2642.jpg">
+					<div class="manual">
+						<a href="#">Python参考手册</a>
+						<a href="#">Node.js中文学习手册</a>
+					</div>					
+				</li>
+				<li class="list-group-item">
+					<img src="https://www.php.cn/upload/system/000/000/001/57d55f07ccfb6991.jpg">
+					<div class="manual">
+						<a href="">html手册</a>
+						<a href="">CSS手册</a>
+						<a href="">AngularJS</a>
+						<a href="">Ajax手册</a>
+					</div>					
+				</li>
+				<li class="list-group-item">
+					<img src="https://www.php.cn/upload/system/000/000/000/5a911102396d0195.jpg">
+					<div class="manual">
+						<a href="#">ASP参考手册大全</a>
+						<a href="#">Bootstrap3参考手册</a>
+					</div>					
+				</li>
+			</ul>
+      	</div>
+      </div>
+       <!-- 广告 -->
+      <div style="width: 1200px;margin-top: 20px;">
+      	<a href="">
+      		<img src="img/advertising/index_ad222.jpg" style="border-radius: 8px;">
+      	</a>
+      </div>
+      <!-- 初级课程 -->
+      <div class="curriculums">
+      	<div style="float: left;">
+      		<img src="https://www.php.cn/static/images/index_learn_first.jpg" style="border-radius: 8px;height: 434px;width: 217px;">
+      	</div>
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico1.png">
+      		</span>
+      		<h3>HTML5</h3>
+      		<a href="video-tutorial.html">开始学习</a>
+      	</div>
+
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico2.png">
+      		</span>
+      		<h3>Java</h3>
+      		<a href="#">开始学习</a>
+      	</div>
+
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico3.png">
+      		</span>
+      		<h3>Python</h3>
+      		<a href="#">开始学习</a>
+      	</div>
+
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico4.png">
+      		</span>
+      		<h3>UI</h3>
+      		<a href="#">开始学习</a>
+      	</div>
+
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico5.png">
+      		</span>
+      		<h3>云计算</h3>
+      		<a href="#">开始学习</a>
+      	</div>
+
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico6.png">
+      		</span>
+      		<h3>软件测试</h3>
+      		<a href="#">开始学习</a>
+      	</div>
+
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico7.png">
+      		</span>
+      		<h3>大数据</h3>
+      		<a href="#">开始学习</a>
+      	</div>
+
+      	<div class="choice">
+      		<p></p>
+      		<span>
+      			<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico8.png">
+      		</span>
+      		<h3>GO语言</h3>
+      		<a href="#">开始学习</a>
+      	</div>
+      	
+      </div>
+      <!-- 广告 -->
+      <div style="width: 1200px;margin-top: 20px;">
+      	<a href="">
+      		<img src="https://www.php.cn/static/images/index_ad222.jpg" style="border-radius: 8px;">
+      	</a>
+      </div>
+
+      <!-- 进阶课程 -->
+      <div class="curriculums">
+      	<div style="float: left;">
+      		<img src="https://www.php.cn/static/images/index_learn_middel.jpg" style="border-radius: 8px;height: 434px;width: 217px;">
+      	</div>
+      	<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico1.png">
+			</span>
+			<h3>HTML5</h3>
+			<a href="#">开始学习</a>
+		</div>
+
+		<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico2.png">
+			</span>
+			<h3>Java</h3>
+			<a href="#">开始学习</a>
+		</div>
+
+		<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico3.png">
+			</span>
+			<h3>Python</h3>
+			<a href="#">开始学习</a>
+		</div>
+
+		<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico4.png">
+			</span>
+			<h3>UI</h3>
+			<a href="#">开始学习</a>
+		</div>
+
+		<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico5.png">
+			</span>
+			<h3>云计算</h3>
+			<a href="#">开始学习</a>
+		</div>
+
+		<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico6.png">
+			</span>
+			<h3>软件测试</h3>
+			<a href="#">开始学习</a>
+		</div>
+
+		<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico7.png">
+			</span>
+			<h3>大数据</h3>
+			<a href="#">开始学习</a>
+		</div>
+
+		<div class="choice">
+			<p></p>
+			<span>
+				<img src="http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/nz_ico8.png">
+			</span>
+			<h3>GO语言</h3>
+			<a href="#">开始学习</a>
+		</div>
+      	
+      </div>
+      <!-- 手册大全 -->
+      <div class="manuals">
+      	<span>学习手册</span>
+      	<div>
+      		<a href="#">
+      			<h3>【PHP手册大全】</h3>
+      			<img src="https://img.php.cn/upload/article/000/000/003/5aed78382bfdc937.png">
+      			<span>程序员之梦《PHP参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【jQuery手册大全】</h3>
+      			<img src="https://img.php.cn/upload/article/000/000/003/5aed7883e4c14591.png">
+      			<span>程序员之梦《jQuery参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【CSS手册大全】</h3>
+      			<img src="https://img.php.cn/upload/article/000/000/003/5aed789d3a7c5463.png">
+      			<span>程序员之梦《CSS参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【HTML手册大全】</h3>
+      			<img src="https://img.php.cn/upload/article/000/000/003/5aed78bbb784e641.png">
+      			<span>程序员之梦《HTML参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【Linux手册大全】</h3>
+      			<img src="https://img.php.cn/upload/article/000/000/003/5aed78cbab833218.png">
+      			<span>程序员之梦《Linux参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【MySQL手册大全】</h3>
+      			<img src="https://img.php.cn/upload/manual/000/000/001/5af142e4b8260953.png">
+      			<span>程序员之梦《MySQL参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【TP手册大全】</h3>
+      			<img src="https://img.php.cn/upload/manual/000/000/001/5af142da51b0a778.png">
+      			<span>程序员之梦《TP参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【CI手册大全】</h3>
+      			<img src="https://img.php.cn/upload/manual/000/000/001/5af142c72b9b0373.png">
+      			<span>程序员之梦《CI参考手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【DedeCMS手册大全】</h3>
+      			<img src="https://img.php.cn/upload/manual/000/000/001/5af167ca0523e239.png">
+      			<span>程序员之梦《DedeCMS手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【Python手册大全】</h3>
+      			<img src="https://img.php.cn/upload/manual/000/000/001/5af95863a8141322.png">
+      			<span>程序员之梦《Python手册》</span>
+      		</a>
+
+      		<a href="#">
+      			<h3>【C语言手册大全】</h3>
+      			<img src="https://img.php.cn/upload/article/000/000/003/5aed78382bfdc937.png">
+      			<span>程序员之梦《C语言手册》</span>
+      		</a>
+			
+			<a href="#">
+				<h3>【ASP手册大全】</h3>
+				<img src="https://img.php.cn/upload/manual/000/000/001/5af9587b02db1548.png">
+				<span>程序员之梦《ASP参考手册》</span>
+			</a>
+      	</div>   		
+      </div>
+      
+    </div>
+    <!-- 页尾 -->
+    <script src="js/footer.js"></script>
+
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<!-- 自定义js -->
+	<script src="js/index-js.js"></script>
+</body>
+</html>

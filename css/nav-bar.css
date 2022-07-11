@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+li{
+  list-style: none;
+}
+#nav{
+    background-color: #000;
+    height: 60px;
+}
+/* 设置响应式布局使浏览器小于1200px时，nav的宽度=1200px*/
+@media screen and (max-width: 1200px) {
+#nav{ 
+  width: 1200px;
+}}
+#logo{
+  width: 12%;
+  float: left;
+  text-align: center;
+  padding: 2px;
+}
+#logo img{
+  width: 100px;
+}
+#demo{
+  float: left;
+  height: 60px;
+  width: 78%;
+}
+#navbar-ul1{
+  float: left;
+}
+.nav-li{   
+  width: 110px;
+  height: 60px; 
+  float: left;
+  text-align:center;
+  line-height: 60px;
+  list-style: none;
+  position:relative;   
+}
+.bgcolor{
+  background-color: #363c41;
+}
+.nav-li a{
+  color: #afafaf;
+  font-size: 14px;   
+  text-decoration: none;
+}
+.nav-li span{
+  display: block; 
+  position: absolute; 
+  width: 0px; 
+  height: 0px; 
+  background: #1fff8f; 
+  top: 55px; 
+  left: 50%;
+}
+.drop-down-list{
+  background-color: #f9f9f9;
+  display: none;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*设置阴影效果*/
+  border-radius: 5px;/*设置圆角div*/
+}
+.list:hover .drop-down-list{
+  display: block;
+}
+/*当鼠标移入list元素时，箭头图标顺时针旋转180度*/
+.list:hover .fa-caret-down{
+  transform: rotate(-180deg);
+}
+.nav-list{   
+  width: 90px;
+  height: 36px; 
+  text-align: center;
+  line-height: 36px;
+  list-style: none;
+  float: left;
+}
+.nav-list:hover{
+  background-color: #F0F0F0;
+}
+/* 搜索栏 */
+#search{
+  float: left;
+  width: 178px;
+  height: 30px;
+  border-bottom: 1px solid #adaaaa;
+  margin-top: 16px;
+  margin-left: 20px;
+  padding: 0px 4px 0px 4px;
+  position: relative;
+}
+#search input{
+  height: 30px;
+  outline: none;
+  background-color: #000;
+  border: none;
+  caret-color: #fff;
+  position: relative;
+}
+.icon-sousuo{
+  color: #adaaaa;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  z-index: 2;
+}
+/* 用户登录 */
+#navbar-ul2{
+  height: 60px;
+  width: 10%;
+  float: right;
+}
+#navbar-ul2 li{
+  width: 60px;
+}
+#navbar-ul2 li:hover{
+  background-color: #363c41;
+}
+
+/* 容器 */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,483 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #f3f5f7;
+}
+#nav{
+  background-color: #000;
+  height: 60px;
+}
+/* 设置响应式布局使浏览器小于1200px时，nav的宽度=1200px*/
+@media screen and (max-width: 1200px) {
+#nav{ 
+  width: 1200px;
+}}
+#logo{
+  width: 12%;
+  float: left;
+  text-align: center;
+  padding: 2px;
+}
+#logo img{
+  width: 100px;
+}
+#navbar-ul1{
+  height: 60px;
+  width: 78%;
+  float: left;
+}
+.nav-li{   
+  width: 110px;
+  height: 60px; 
+  float: left;
+  text-align:center;
+  line-height: 60px;
+  list-style: none;
+  position:relative;   
+} 
+.nav-li a{
+  display: inline-block;
+  height: 100%;
+  color: #afafaf;
+  font-size: 14px;   
+  text-decoration: none;
+}
+.nav-li span{
+  display: block; 
+  position: absolute; 
+  width: 0px; 
+  height: 0px; 
+  background: #1fff8f; 
+  top: 55px; 
+  left: 50%;
+}
+#navbar-ul1 .nav-a:hover{
+  color: #fff;
+}
+.drop-down-list{
+  background-color: #f9f9f9;
+  display: none;
+  width: 201px;
+  height: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*设置阴影效果*/
+  border-radius: 5px;/*设置圆角div*/
+}
+.list:hover .drop-down-list{
+  display: block;
+}
+/*当鼠标移入list元素时，箭头图标顺时针旋转180度*/
+.list:hover .fa-caret-down{
+  transform: rotate(-180deg);
+}
+.nav-list{   
+  
+  line-height: 36px;
+  list-style: none;
+  float: left;
+}
+.nav-list a{
+  padding: 0 20px;
+  color: #333;
+  font-weight: 500;
+}
+.nav-list:hover{
+  background-color: #F0F0F0;
+}
+/* 用户登录 */
+#navbar-ul2{
+  height: 60px;
+  width: 10%;
+  float: right;
+}
+#navbar-ul2 li{
+  width: 60px;
+}
+#navbar-ul2 li:hover{
+  background-color: #363c41;
+}
+/*主体样式*/
+#subject{
+  width: 1200px;
+  margin:0 auto;
+  margin-top: 30px;
+}
+.content{
+  width: 100%;
+  height: 510px;
+  background-color: #fff;
+  border-radius: 8px; /*设置圆角div*/
+  box-shadow: 0 12px 24px 0 rgba(7,17,27,.2); /*设置阴影效果*/
+}
+#content-left{
+  width:  216px;
+  height: 510px;
+  float: left;
+  background-color: #2b333b;;
+  border-radius: 8px 0px  0px  8px; /*设置圆角div*/
+}
+/* 左nav-bar */
+.nav-left-li{
+  width:  216px;
+  height: 60px;
+  list-style: none;
+  line-height: 60px;
+  padding-left: 30px; 
+}
+.nav-left-li:hover{
+  background-color: #363c41;
+  cursor: pointer;
+}
+.nav-left-li a{
+  font-size: 16px;
+  color: rgba(255,255,255,.6);
+  text-decoration: none;
+}
+.nav-left-li i{
+  margin-top: 3px;
+  color: rgba(255,255,255,.6);
+}
+.dropdown-menu{
+  width: 750px;
+  height: 450px;
+  border-radius: 0px 0px 14px 0px;
+  cursor: default;
+}
+.nav-left-li:hover .dropdown-menu{
+  display: block;
+} 
+.dropdown-menu-top{
+  height: 200px;
+  margin-left: 48px;
+}
+.small-title{
+  font-size: 12px;
+} 
+.dropdown-divider{
+  margin-top: -30px;
+  margin-left: 60px;
+  margin-right: 80px;
+}
+/* 列表向右显示 */
+.nav{
+  margin-left: -14px;
+  margin-bottom: 15px;
+}
+.nav-item{
+  height: 30px;
+}
+.nav-item .nav-link{
+  font-size: 14px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.dropdown-menu-bottom{
+  background-color: #f3f5f7;
+  border-radius: 0px 0px 14px 0px;
+  height: 240px;
+}
+.dropdown-content{
+  width: 300px;
+  height: 60px;
+  float: left;
+  margin-left: 52px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.dropdown-content .nav-link{
+  padding: 0px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.dropdown-img img{
+  width: 64px;
+  height: 42px;
+  float: left;
+  border-radius: 8px;
+}
+.title-h3{
+  width: 210px;
+  float: left;
+  margin-left: 10px;
+}
+.title-h3 span{
+  font-size: 12px;
+  margin-left: 4px;
+}
+.font-size-12{
+  font-size: 12px;
+}
+.text-span{
+  float: left;
+  margin-top: -20px;
+}
+.text-span span{
+  width: 40px;
+  float: left;
+}
+.fa-angle-right{
+  font-size:24px;
+  float: right;
+  margin-right: 15px;
+  line-height: 50px;
+}
+#content-right{
+  width: 984px;
+  height: 510px;
+  float: right;
+}
+#content-right-top{
+  height: 60px;
+  margin-top: -18px;
+}
+.input-group{
+  width: 250px; 
+  float: right;
+  margin-top: 12px;
+}
+/* carousel宽高 */
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+}
+.content-img{
+  width: 236px;
+  height: 90px;
+  float: left;
+  margin: 10px 5px 0px 5px;
+}
+.content-img img{
+  border-radius: 8px;
+}
+
+/* 推荐style*/
+.recommend{
+  width: 1200px;
+  height: 416px;
+  margin-top: 20px;
+}
+.fillet{
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(7,17,27,.05);
+}
+#headlines{
+  width: 300px;
+  height: 100%;    
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.subtitle{
+  height: 35px;
+  font-size: 14px;
+  line-height: 35px;
+  padding-left: 15px;
+  border-bottom:1px dotted #e9e9e9;
+}
+#headlines .list-group-item{
+  color: #333;
+  font-size: 14px;
+  margin-top: 8px;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;/*不允许换行*/
+  overflow: hidden;/*超出隐藏*/
+  text-overflow: ellipsis;/*文本超出三点代替*/
+}
+#headlines .list-group-item:hover {
+  color: #999;
+}
+#latest-courses{
+  width: 620px;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#latest-courses .curriculum{
+  width: 170px;
+  height: 140px;
+  float: left;
+  margin: 20px 10px 20px 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.curriculum img{
+  width: 170px;
+  height: 90px;
+  border-radius: 8px;
+}
+.container-2{
+  width: 170px;
+  height: 70px;
+  margin-top: -20px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  z-index: 3px;
+}
+.container-2 h6{
+  color: #333;
+  font-size: 14px;
+}
+.container-2 h6:hover {
+  color: #999;
+}
+#common-manual{
+  width: 260px;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#common-manual .list-group-item{
+  padding: 0;
+  height: 55px;
+  border: none;
+}
+#common-manual .list-group-item img{  
+  width: 40px;
+  float: left;
+  margin-top: 5px;
+}
+.manual{
+  width: 156px;
+  height: 55px;
+  float: left;
+  margin-left: 15px;
+}
+.manual a{
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+}
+.manual a:hover {
+  color: #999;
+}
+/*课程*/
+.curriculums{
+  width: 1200px;
+  height: 434px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  margin-top: 20px
+}
+
+.choice{
+  width: 235px;
+  height: 212px;
+  float: left;
+  margin: 0 0 10px 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+}
+.choice:hover{
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+.choice p{
+  width: 245px;
+  height: 234px;
+  top: 50%;
+  left: 50%;
+  margin: -114px 0 0 -129px;
+  position: absolute;
+  display: none; 
+  background-image: url(/home/user/桌面/nz_img5.png);
+}
+.choice:hover p{  
+  display: block;
+}
+.choice span{
+  display: block;
+  margin: 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #394249;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 6px;
+  position: relative;
+  z-index: 1;
+}
+.choice h3{
+  font-size: 17px;
+  color: #0a0a0a;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+.choice a{
+  display: block;
+  width: 147px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #4b81d5;
+  text-align: center;
+  line-height: 28px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #2365d9;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+.choice:hover a{
+  background-color: #2365d9;
+  color: #fff;
+}
+.manuals{
+  width: 1200px;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #eee;
+}
+.manuals span{
+  font-size: 19px;
+  margin: 20px;
+}
+.manuals div{
+  width: 1200px;
+  height: 370px;
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+}
+.manuals >div >a{
+  width: 218px;
+  height: 100px;
+  float: left;
+  padding: 20px;
+  margin: 10px 0px 10px 17px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+.manuals >div >a >h3{
+  font-size: 16px;
+  color: #64854c;
+}
+.manuals >div >a >img{
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin-right: 10px;
+}
+.manuals >div >a >span{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  text-align: left;
+}
